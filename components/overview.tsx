@@ -36,7 +36,7 @@ export const Overview = () => {
           on the client to create a seamless chat experience.
         </p>
         <p>
-          You can hello  learn more about the AI SDK by visiting the{' '}
+          You can learn more about the AI SDK by visiting the{' '}
           <Link
             className="font-medium underline underline-offset-4"
             href="https://sdk.vercel.ai/docs"
