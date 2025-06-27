@@ -358,8 +358,8 @@ export default function KnowledgeAdminPage() {
               <p><strong>CSV形式:</strong></p>
               <ul className="list-disc list-inside space-y-1">
                 <li>1行目: ヘッダー（text,keywords,category,severity,symptoms,recommendations,references）</li>
-                <li>複数の値は「;」で区切る（例: "キーワード1;キーワード2"）</li>
-                <li>テキストにカンマが含まれる場合は「"」で囲む</li>
+                <li>複数の値は「;」で区切る（例: &quot;キーワード1;キーワード2&quot;）</li>
+                <li>テキストにカンマが含まれる場合は&ldquo;&quot;&rdquo;で囲む</li>
                 <li>必須項目: text, keywords, category, severity</li>
               </ul>
             </div>

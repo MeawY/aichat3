@@ -10,7 +10,7 @@ export default function Home() {
       <header className="bg-[#008080] text-[#fffff0] py-4">
         <div className="container flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <Dna className="h-6 w-6 text-[#fffff0]" />
+            <Dna className="size-6 text-[#fffff0]" />
             <span className="text-xl font-bold text-[#fffff0]">NutriGenAI</span>
           </div>
           <nav className="hidden md:flex gap-6">
@@ -40,7 +40,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-16">
               <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
-                無料トライアル開始 <ArrowRight className="ml-2 h-4 w-4" />
+                無料トライアル開始 <ArrowRight className="ml-2 size-4" />
               </Button>
               <Button size="lg" variant="outline">
                 デモを見る
@@ -51,7 +51,7 @@ export default function Home() {
                 <div className="flex-1 overflow-auto space-y-4 p-4">
                   <div className="flex items-start gap-4 text-left">
                     <div className="rounded-full bg-gray-200 p-2">
-                      <MessageCircle className="h-6 w-6 text-gray-500" />
+                      <MessageCircle className="size-6 text-gray-500" />
                     </div>
                     <div className="bg-gray-100 rounded-lg p-3 max-w-[80%]">
                       <p className="text-sm">
@@ -61,7 +61,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-start gap-4 text-left flex-row-reverse">
                     <div className="rounded-full bg-emerald-100 p-2">
-                      <Brain className="h-6 w-6 text-emerald-600" />
+                      <Brain className="size-6 text-emerald-600" />
                     </div>
                     <div className="bg-emerald-50 rounded-lg p-3 max-w-[80%]">
                       <p className="text-sm">
@@ -92,17 +92,17 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-center mb-12">NutriGenAIの特徴</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-[#008080] p-6 rounded-lg text-[#fffff0]">
-                <Dna className="h-8 w-8 mb-4 text-[#fffff0]" />
+                <Dna className="size-8 mb-4 text-[#fffff0]" />
                 <h3 className="text-xl font-bold mb-2">分子栄養学に基づく</h3>
                 <p>遺伝子レベルでの栄養分析により、あなたに最適な食事プランを提案します。</p>
               </div>
               <div className="bg-[#008080] p-6 rounded-lg text-[#fffff0]">
-                <Brain className="h-8 w-8 mb-4 text-[#fffff0]" />
+                <Brain className="size-8 mb-4 text-[#fffff0]" />
                 <h3 className="text-xl font-bold mb-2">AIによる最適化</h3>
                 <p>人工知能があなたの体質や生活習慣に合わせて、最適な栄養バランスを計算します。</p>
               </div>
               <div className="bg-[#008080] p-6 rounded-lg text-[#fffff0]">
-                <ChartLine className="h-8 w-8 mb-4 text-[#fffff0]" />
+                <ChartLine className="size-8 mb-4 text-[#fffff0]" />
                 <h3 className="text-xl font-bold mb-2">進化する提案</h3>
                 <p>継続的な利用により、AIがあなたの体質をより深く理解し、より正確な提案を行います。</p>
               </div>
@@ -121,7 +121,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white rounded-xl p-6 shadow-sm">
-                <div className="bg-[#fffff0] w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                <div className="bg-[#fffff0] size-12 rounded-full flex items-center justify-center mb-4">
                   <span className="text-[#000080] font-bold">1</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3">プロフィール作成</h3>
@@ -130,7 +130,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-sm">
-                <div className="bg-[#fffff0] w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                <div className="bg-[#fffff0] size-12 rounded-full flex items-center justify-center mb-4">
                   <span className="text-[#000080] font-bold">2</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3">AIによる分析</h3>
@@ -139,7 +139,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-sm">
-                <div className="bg-[#fffff0] w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                <div className="bg-[#fffff0] size-12 rounded-full flex items-center justify-center mb-4">
                   <span className="text-[#000080] font-bold">3</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3">パーソナライズされたアドバイス</h3>
@@ -172,7 +172,7 @@ export default function Home() {
                 <CardContent>
                   <ul className="space-y-3">
                     <li className="flex items-center">
-                      <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
+                      <svg className="size-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -182,7 +182,7 @@ export default function Home() {
                       <span className="ml-2 text-gray-600">AIチャットボット（月100回まで）</span>
                     </li>
                     <li className="flex items-center">
-                      <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
+                      <svg className="size-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -192,7 +192,7 @@ export default function Home() {
                       <span className="ml-2 text-gray-600">基本的な栄養アドバイス</span>
                     </li>
                     <li className="flex items-center">
-                      <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
+                      <svg className="size-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -221,7 +221,7 @@ export default function Home() {
                 <CardContent>
                   <ul className="space-y-3">
                     <li className="flex items-center">
-                      <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
+                      <svg className="size-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -231,7 +231,7 @@ export default function Home() {
                       <span className="ml-2 text-gray-600">AIチャットボット（無制限）</span>
                     </li>
                     <li className="flex items-center">
-                      <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
+                      <svg className="size-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -241,7 +241,7 @@ export default function Home() {
                       <span className="ml-2 text-gray-600">詳細な分子栄養分析</span>
                     </li>
                     <li className="flex items-center">
-                      <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
+                      <svg className="size-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -251,7 +251,7 @@ export default function Home() {
                       <span className="ml-2 text-gray-600">カスタム栄養プラン</span>
                     </li>
                     <li className="flex items-center">
-                      <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
+                      <svg className="size-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -261,7 +261,7 @@ export default function Home() {
                       <span className="ml-2 text-gray-600">日次・週次レポート</span>
                     </li>
                     <li className="flex items-center">
-                      <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
+                      <svg className="size-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -286,7 +286,7 @@ export default function Home() {
                 <CardContent>
                   <ul className="space-y-3">
                     <li className="flex items-center">
-                      <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
+                      <svg className="size-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -296,7 +296,7 @@ export default function Home() {
                       <span className="ml-2 text-gray-600">プレミアムの全機能</span>
                     </li>
                     <li className="flex items-center">
-                      <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
+                      <svg className="size-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -306,7 +306,7 @@ export default function Home() {
                       <span className="ml-2 text-gray-600">専任の栄養コンサルタント</span>
                     </li>
                     <li className="flex items-center">
-                      <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
+                      <svg className="size-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -316,7 +316,7 @@ export default function Home() {
                       <span className="ml-2 text-gray-600">カスタムAPI連携</span>
                     </li>
                     <li className="flex items-center">
-                      <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
+                      <svg className="size-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -326,7 +326,7 @@ export default function Home() {
                       <span className="ml-2 text-gray-600">ホワイトラベル対応</span>
                     </li>
                     <li className="flex items-center">
-                      <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
+                      <svg className="size-5 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -360,8 +360,8 @@ export default function Home() {
               <Card className="bg-white">
                 <CardContent className="pt-6">
                   <div className="flex items-center mb-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center">
+                    <div className="shrink-0">
+                      <div className="size-12 rounded-full bg-emerald-100 flex items-center justify-center">
                         <span className="text-emerald-600 font-bold">TK</span>
                       </div>
                     </div>
@@ -378,8 +378,8 @@ export default function Home() {
               <Card className="bg-white">
                 <CardContent className="pt-6">
                   <div className="flex items-center mb-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center">
+                    <div className="shrink-0">
+                      <div className="size-12 rounded-full bg-emerald-100 flex items-center justify-center">
                         <span className="text-emerald-600 font-bold">MY</span>
                       </div>
                     </div>
@@ -396,8 +396,8 @@ export default function Home() {
               <Card className="bg-white">
                 <CardContent className="pt-6">
                   <div className="flex items-center mb-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center">
+                    <div className="shrink-0">
+                      <div className="size-12 rounded-full bg-emerald-100 flex items-center justify-center">
                         <span className="text-emerald-600 font-bold">SK</span>
                       </div>
                     </div>
@@ -506,7 +506,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Dna className="h-6 w-6 text-[#fffff0]" />
+                <Dna className="size-6 text-[#fffff0]" />
                 <span className="text-xl font-bold text-[#fffff0]">NutriGenAI</span>
               </div>
               <p className="text-[#fffff0]/80">
@@ -567,7 +567,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold mb-4 text-[#fffff0]">お問い合わせ</h3>
               <ul className="space-y-2">
                 <li className="flex items-center">
-                  <svg className="h-5 w-5 mr-2 text-[#fffff0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="size-5 mr-2 text-[#fffff0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -578,7 +578,7 @@ export default function Home() {
                   <span>info@nutrigen-ai.com</span>
                 </li>
                 <li className="flex items-center">
-                  <svg className="h-5 w-5 mr-2 text-[#fffff0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="size-5 mr-2 text-[#fffff0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -591,17 +591,17 @@ export default function Home() {
               </ul>
               <div className="mt-4 flex space-x-4">
                 <a href="#" className="text-[#fffff0] hover:text-[#fffff0]">
-                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="size-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
                   </svg>
                 </a>
                 <a href="#" className="text-[#fffff0] hover:text-[#fffff0]">
-                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="size-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                   </svg>
                 </a>
                 <a href="#" className="text-[#fffff0] hover:text-[#fffff0]">
-                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="size-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                   </svg>
                 </a>
