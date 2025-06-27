@@ -25,6 +25,7 @@ import { getWeather } from '@/lib/ai/tools/get-weather';
 import { isProductionEnvironment } from '@/lib/constants';
 import { NextResponse } from 'next/server';
 import { myProvider } from '@/lib/ai/providers';
+import { getMostRelevantKnowledge, SEVERITY_LEVELS } from '@/lib/knowledge-base';
 
 export const maxDuration = 60;
 
@@ -70,11 +71,52 @@ export async function POST(request: Request) {
       messages: [{ ...userMessage, createdAt: new Date(), chatId: id }],
     });
 
+    // 知識ベースから関連情報を取得
+    let userMessageText = '';
+    if (typeof userMessage.content === 'string') {
+      userMessageText = userMessage.content;
+    } else if (Array.isArray(userMessage.content)) {
+      const contentArray = userMessage.content as any[];
+      for (const content of contentArray) {
+        if (content.type === 'text') {
+          userMessageText += content.text;
+        }
+      }
+    }
+    
+    const relevantKnowledge = getMostRelevantKnowledge(userMessageText, 2);
+    
+    // 動的にシステムプロンプトを生成
+    let dynamicSystemPrompt = systemPrompt({ selectedChatModel });
+    
+    if (relevantKnowledge.length > 0) {
+      const knowledgeContext = relevantKnowledge
+        .map(item => {
+          const severityInfo = SEVERITY_LEVELS[item.severity as keyof typeof SEVERITY_LEVELS];
+          const severityText = severityInfo ? `[${severityInfo.label}]` : '';
+          
+          let context = `- ${severityText} ${item.text}`;
+          
+          if (item.symptoms.length > 0) {
+            context += `\n  症状: ${item.symptoms.join(', ')}`;
+          }
+          
+          if (item.recommendations.length > 0) {
+            context += `\n  推奨事項: ${item.recommendations.join(', ')}`;
+          }
+          
+          return context;
+        })
+        .join('\n\n');
+      
+      dynamicSystemPrompt += `\n\nRelevant knowledge for this conversation:\n${knowledgeContext}\n\nUse this information to provide accurate and helpful responses. Pay special attention to severity levels and recommendations.`;
+    }
+
     return createDataStreamResponse({
       execute: (dataStream) => {
         const result = streamText({
           model: myProvider.languageModel(selectedChatModel),
-          system: systemPrompt({ selectedChatModel }),
+          system: dynamicSystemPrompt,
           messages,
           maxSteps: 5,
           experimental_activeTools:

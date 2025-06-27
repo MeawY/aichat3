@@ -86,6 +86,8 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@playwright/test": "^1.50.1",
+    "@stagewise-plugins/react": "^0.4.9",
+    "@stagewise/toolbar-next": "^0.4.9",
     "@tailwindcss/typography": "^0.5.15",
     "@types/d3-scale": "^4.0.8",
     "@types/node": "^22.8.6",
