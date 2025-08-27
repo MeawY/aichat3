@@ -10,6 +10,7 @@
 <p align="center">
   <a href="#features"><strong>Features</strong></a> ·
   <a href="#model-providers"><strong>Model Providers</strong></a> ·
+  <a href="#knowledge-base"><strong>Knowledge Base</strong></a> ·
   <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
   <a href="#running-locally"><strong>Running locally</strong></a>
 </p>
@@ -32,10 +33,51 @@
   - [Vercel Blob](https://vercel.com/storage/blob) for efficient file storage
 - [NextAuth.js](https://github.com/nextauthjs/next-auth)
   - Simple and secure authentication
+- **Knowledge Base Integration**
+  - Specialized knowledge base for protein structure, nutrition, and health topics
+  - Dynamic content retrieval based on user queries
+  - Keyword-based search and relevance scoring
 
 ## Model Providers
 
 This template ships with OpenAI `gpt-4o` as the default. However, with the [AI SDK](https://sdk.vercel.ai/docs), you can switch LLM providers to [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Cohere](https://cohere.com/), and [many more](https://sdk.vercel.ai/providers/ai-sdk-providers) with just a few lines of code.
+
+## Knowledge Base
+
+This chatbot includes a specialized knowledge base covering:
+
+- **Protein Structure**: Primary structure, alpha helix, oligomers, and protein formation
+- **Nutrition & Metabolism**: Amino acids, protein breakdown, PEM (Protein Energy Malnutrition)
+- **Health & Wellness**: pH balance, citric acid, acetic acid effects
+- **Medical Conditions**: Cancer risks, DNA/RNA structure, health risks
+- **Nutritional Disorders**: Kwashiorkor, Marasmus, and malnutrition types
+
+### How it works:
+
+1. **Dynamic Content Retrieval**: When users ask questions, the system automatically searches the knowledge base for relevant information
+2. **Keyword Matching**: Uses intelligent keyword matching to find the most relevant content
+3. **Relevance Scoring**: Ranks results by relevance to provide the most accurate information
+4. **Context Integration**: Relevant knowledge is dynamically included in the AI's system prompt
+
+### Testing the Knowledge Base:
+
+You can test the knowledge base API directly:
+
+```bash
+# Search for protein-related information
+curl "http://localhost:3000/api/knowledge?q=タンパク質"
+
+# Search for nutrition information
+curl "http://localhost:3000/api/knowledge?q=クエン酸"
+```
+
+### Adding New Knowledge:
+
+To add new knowledge to the system:
+
+1. Edit `lib/data/knowledge-base.json`
+2. Add new entries with `text` and `keywords` fields
+3. The system will automatically include new knowledge in future conversations
 
 ## Deploy Your Own
 

@@ -1,0 +1,232 @@
+[
+  {
+    "id": "protein-primary-structure",
+    "text": "タンパク質の一次構造とは、アミノ酸が並べられた配列のことである。先頭は必ずメチオニンであり、メチオニンがないと配列ができない。配列が終わったらメチオニンは切り離される場合と、そのまま残る場合がある。",
+    "keywords": ["タンパク質", "一次構造", "アミノ酸", "配列", "メチオニン", "開始コドン"],
+    "category": "protein_structure",
+    "severity": "info",
+    "symptoms": [],
+    "recommendations": ["基本的な生化学の理解に重要"],
+    "references": ["生化学教科書"]
+  },
+  {
+    "id": "alpha-helix-structure",
+    "text": "アミノ酸配列が螺旋状にねじれていく構造をアルファヘリックス構造という。さらにねじれて立体構造を取り、球状タンパク質となる。",
+    "keywords": ["タンパク質", "アルファヘリックス", "螺旋構造", "立体構造", "球状タンパク質"],
+    "category": "protein_structure",
+    "severity": "info",
+    "symptoms": [],
+    "recommendations": ["タンパク質の機能理解に重要"],
+    "references": ["構造生物学"]
+  },
+  {
+    "id": "oligomer-formation",
+    "text": "球状タンパク質はサブユニットが集まってできている。サブユニットが2つなら2量体、3つなら3量体といい、最大12量体まである。サブユニットがくっついたものをオリゴマーという。",
+    "keywords": ["球状タンパク質", "サブユニット", "オリゴマー", "多量体", "構造"],
+    "category": "protein_structure",
+    "severity": "info",
+    "symptoms": [],
+    "recommendations": ["酵素機能の理解に重要"],
+    "references": ["酵素学"]
+  },
+  {
+    "id": "heavy-metal-inhibition",
+    "text": "オリゴマータンパク質の形成は非常に重要であり、酵素活性など生命活動の基本となる。重金属はオリゴマータンパク質の形成を阻害する。",
+    "keywords": ["オリゴマー", "酵素活性", "生命活動", "重金属", "阻害", "キレート"],
+    "category": "health_risks",
+    "severity": "warning",
+    "symptoms": ["酵素機能低下", "代謝異常", "疲労感"],
+    "recommendations": ["重金属暴露を避ける", "キレート療法の検討"],
+    "references": ["環境医学", "毒物学"]
+  },
+  {
+    "id": "ph-importance",
+    "text": "オリゴマータンパク質を構成する上で、体内のpH値も重要である。各臓器ごとに最適なpH値があり、それによってタンパク質の構造や機能が変わる。",
+    "keywords": ["オリゴマー", "pH", "臓器", "最適値", "構造", "機能"],
+    "category": "biochemistry",
+    "severity": "info",
+    "symptoms": [],
+    "recommendations": ["pHバランスの維持が重要"],
+    "references": ["生理学"]
+  },
+  {
+    "id": "ph-regulation",
+    "text": "人間の体には、pHを調整する機構（干渉系）がある。血液、呼吸器系、腎臓などがpH調整に関わっている。",
+    "keywords": ["pH", "干渉系", "血液", "呼吸", "腎臓", "恒常性"],
+    "category": "physiology",
+    "severity": "info",
+    "symptoms": [],
+    "recommendations": ["呼吸と腎機能の維持が重要"],
+    "references": ["生理学"]
+  },
+  {
+    "id": "baking-soda-misconception",
+    "text": "重曹水やクエン酸水は、X（旧Twitter）などで健康に良いとされているが、実際にはほとんどpH値を変える効果はない。過剰摂取するとアルカローシスを引き起こす可能性がある。",
+    "keywords": ["重曹", "クエン酸", "アルカローシス", "pH", "健康", "過剰摂取", "リスク"],
+    "category": "health_misconceptions",
+    "severity": "warning",
+    "symptoms": ["アルカローシス", "電解質異常", "不整脈"],
+    "recommendations": ["過剰摂取を避ける", "医師に相談"],
+    "references": ["薬理学", "電解質学"]
+  },
+  {
+    "id": "citric-acid-metabolism",
+    "text": "クエン酸は体内でアルカリ性に変わるが、通常の量を摂取する分には問題ない。ただし、腎臓が悪い人は過剰摂取を避けるべきである。",
+    "keywords": ["クエン酸", "アルカリ性", "腎臓", "過剰摂取", "代謝"],
+    "category": "nutrition",
+    "severity": "caution",
+    "symptoms": ["腎機能障害の悪化", "電解質異常"],
+    "recommendations": ["腎臓病の人は摂取量に注意", "医師に相談"],
+    "references": ["腎臓病学", "栄養学"]
+  },
+  {
+    "id": "citric-acid-myth",
+    "text": "クエン酸の効果がバレたら医者が儲からないという話はデマである。クエン酸で何でも病気が治るわけではない。",
+    "keywords": ["クエン酸", "デマ", "医療", "効果", "病気"],
+    "category": "health_misconceptions",
+    "severity": "info",
+    "symptoms": [],
+    "recommendations": ["科学的根拠の確認", "医療専門家に相談"],
+    "references": ["医療情報学"]
+  },
+  {
+    "id": "citric-acid-food",
+    "text": "梅干しなど、酸味のある食品を適量摂取する程度であれば問題ない。しかし、サプリメントなどでわざわざクエン酸を摂取する必要はない。",
+    "keywords": ["梅干し", "クエン酸", "食品", "サプリメント", "健康"],
+    "category": "nutrition",
+    "severity": "info",
+    "symptoms": [],
+    "recommendations": ["自然な食品から摂取", "サプリメントは不要"],
+    "references": ["栄養学"]
+  },
+  {
+    "id": "cancer-citric-acid-risk",
+    "text": "ガンと診断された場合は、クエン酸の摂取は避けるべきである。ガン細胞はクエン酸を好み、エネルギー源として利用するため、増殖を促進する可能性がある。",
+    "keywords": ["ガン", "クエン酸", "エネルギー", "増殖", "リスク", "代謝"],
+    "category": "cancer_risks",
+    "severity": "high",
+    "symptoms": ["ガン細胞の増殖促進", "治療効果の低下"],
+    "recommendations": ["ガン患者はクエン酸摂取を避ける", "医師に相談"],
+    "references": ["腫瘍学", "代謝学"]
+  },
+  {
+    "id": "acetic-acid-benefits",
+    "text": "サツマイモやリンゴ酢には、クエン酸よりも多くの酢酸が含まれている。酢酸は血糖値調整、脂肪燃焼促進、血圧調整、抗菌作用、消化促進などの効果がある。",
+    "keywords": ["酢酸", "リンゴ酢", "血糖値", "脂肪燃焼", "血圧", "抗菌", "消化", "疲労回復"],
+    "category": "nutrition",
+    "severity": "info",
+    "symptoms": [],
+    "recommendations": ["適量摂取で健康効果", "過剰摂取に注意"],
+    "references": ["栄養学", "機能性食品学"]
+  },
+  {
+    "id": "cancer-acetic-acid-risk",
+    "text": "ただし、酢酸もガン細胞に利用される可能性があるため、ガン患者への摂取は避けるべきである。",
+    "keywords": ["酢酸", "ガン細胞", "リスク"],
+    "category": "cancer_risks",
+    "severity": "high",
+    "symptoms": ["ガン細胞の増殖促進"],
+    "recommendations": ["ガン患者は酢酸摂取も避ける", "医師に相談"],
+    "references": ["腫瘍学"]
+  },
+  {
+    "id": "cancer-transporters",
+    "text": "ガン細胞は、MCT1やMCT4といった酢酸トランスポーターを多く発現させる。",
+    "keywords": ["ガン細胞", "MCT1", "MCT4", "トランスポーター", "酢酸"],
+    "category": "cancer_biology",
+    "severity": "info",
+    "symptoms": [],
+    "recommendations": ["ガン治療の研究対象"],
+    "references": ["分子生物学", "腫瘍学"]
+  },
+  {
+    "id": "cancer-specific-preferences",
+    "text": "特定の癌（前立腺癌、肝臓癌、乳癌、膵臓癌）はクエン酸を好む傾向がある。肝臓癌、脳腫瘍、腎臓癌、前立腺癌は酢酸を好む。",
+    "keywords": ["癌", "クエン酸", "酢酸", "前立腺癌", "肝臓癌", "乳癌", "膵臓癌", "脳腫瘍", "腎臓癌"],
+    "category": "cancer_risks",
+    "severity": "high",
+    "symptoms": ["特定癌種での増殖促進"],
+    "recommendations": ["該当癌種の患者は特に注意", "個別の栄養指導"],
+    "references": ["腫瘍学", "栄養療法"]
+  },
+  {
+    "id": "dna-repair",
+    "text": "DNAには、遺伝情報が書き込まれており、複製時にエラーが出やすい。そのため、修復システムが備わっている。",
+    "keywords": ["DNA", "遺伝情報", "複製", "エラー", "修復システム", "ミスマッチ"],
+    "category": "genetics",
+    "severity": "info",
+    "symptoms": [],
+    "recommendations": ["DNA修復機能の維持が重要"],
+    "references": ["分子生物学", "遺伝学"]
+  },
+  {
+    "id": "dna-rna-stability",
+    "text": "DNAは二重螺旋構造であり、片方はコピーであるため、ミスマッチが起きた際に修復が可能である。しかし、RNAにはコピーがないため、エラーが起きた場合修復できない。",
+    "keywords": ["DNA", "RNA", "二重螺旋", "コピー", "ミスマッチ", "修復", "安定性"],
+    "category": "genetics",
+    "severity": "info",
+    "symptoms": [],
+    "recommendations": ["RNAの品質管理が重要"],
+    "references": ["分子生物学"]
+  },
+  {
+    "id": "rna-vaccine-risk",
+    "text": "RNAワクチンは、DNAに新しいメッセージを書き込んでしまう可能性があるため、危険である。",
+    "keywords": ["RNAワクチン", "DNA", "遺伝子改変", "リスク"],
+    "category": "vaccine_safety",
+    "severity": "warning",
+    "symptoms": ["理論的な遺伝子改変リスク"],
+    "recommendations": ["科学的根拠の確認", "専門家に相談"],
+    "references": ["ワクチン学", "分子生物学"]
+  },
+  {
+    "id": "protein-breakdown",
+    "text": "摂取したタンパク質は、アミノ酸まで分解される必要がある。この過程で、ビタミンB6が働く。その後、脱アミノ反応でアンモニアが処理され、オルニチン回路で尿素に分解される。",
+    "keywords": ["タンパク質", "分解", "アミノ酸", "ビタミンB6", "脱アミノ反応", "アンモニア", "オルニチン回路", "尿素"],
+    "category": "metabolism",
+    "severity": "info",
+    "symptoms": [],
+    "recommendations": ["ビタミンB6の適切な摂取"],
+    "references": ["生化学", "栄養学"]
+  },
+  {
+    "id": "female-protein-metabolism",
+    "text": "女性は、一般的に筋肉量が少ないため、タンパク質の過剰摂取に注意する必要がある。筋肉はアンモニアの分解器官でもあるため、筋肉量が少ないとアンモニア処理が追いつかなくなる可能性がある。",
+    "keywords": ["タンパク質", "筋肉量", "アンモニア", "女性", "過剰摂取", "肝臓", "腎臓"],
+    "category": "gender_specific_health",
+    "severity": "caution",
+    "symptoms": ["アンモニア蓄積", "疲労感", "肝腎機能への負担"],
+    "recommendations": ["女性は適切なタンパク質量", "筋肉量の維持"],
+    "references": ["栄養学", "女性健康学"]
+  },
+  {
+    "id": "pem-overview",
+    "text": "タンパク質、エネルギー不足による栄養不良をPEM（Protein Energy Malnutrition：タンパク質エネルギー栄養不良）という。PEMには、クワシオルコルとマラスムスがある。",
+    "keywords": ["PEM", "栄養不良", "タンパク質", "エネルギー", "クワシオルコル", "マラスムス"],
+    "category": "nutritional_disorders",
+    "severity": "high",
+    "symptoms": ["重度の栄養不良", "成長障害", "免疫機能低下"],
+    "recommendations": ["早期発見と治療", "栄養指導"],
+    "references": ["栄養学", "小児科学"]
+  },
+  {
+    "id": "kwashiorkor",
+    "text": "クワシオルコルとは、タンパク質不足が顕著で、カロリーは摂取している状態のこと。むくみ、脂肪肝、皮膚や髪のトラブル、成長の遅れなどが特徴である。",
+    "keywords": ["クワシオルコル", "タンパク質", "カロリー", "むくみ", "脂肪肝", "皮膚", "髪", "成長"],
+    "category": "nutritional_disorders",
+    "severity": "high",
+    "symptoms": ["むくみ", "脂肪肝", "皮膚トラブル", "髪の変化", "成長遅延"],
+    "recommendations": ["タンパク質補給", "医療機関での治療"],
+    "references": ["栄養学", "小児科学"]
+  },
+  {
+    "id": "marasmus",
+    "text": "マラスムスとは、タンパク質もエネルギーも両方足りない、全体的な栄養失調の状態のこと。脂肪と筋肉が極端に減少し、免疫機能も低下する。",
+    "keywords": ["マラスムス", "タンパク質", "エネルギー", "栄養失調", "痩せ", "筋肉", "免疫"],
+    "category": "nutritional_disorders",
+    "severity": "critical",
+    "symptoms": ["極度の痩せ", "筋肉減少", "免疫機能低下", "生命の危機"],
+    "recommendations": ["緊急医療介入", "段階的栄養補給"],
+    "references": ["栄養学", "救急医学"]
+  }
+] 
